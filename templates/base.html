@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="慢记，一处记录设计、技术与日常生活的安静角落。"><title>{% block title %}慢记 Slow Notes · 在快世界里，慢慢记录{% endblock %}</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"><script defer src="{{ url_for('static', filename='app.js') }}"></script></head>
+<body>
+<header class="header wrap"><a class="brand" href="/" aria-label="慢记首页"><span class="brand-icon">m<span>•</span></span><b>慢记<span class="brand-en">SLOW NOTES</span></b></a><nav aria-label="主导航"><a class="{{ 'active' if request.path == '/' }}" href="/">文章</a><a class="{{ 'active' if request.path == '/about' }}" href="/about">关于</a><button class="nav-search" aria-label="搜索文章" onclick="location.href='/#search'">⌕</button><a class="nav-cta" href="/write">写博客 <span>↗</span></a></nav></header>
+{% block content %}{% endblock %}
+<footer class="wrap footer"><a class="footer-logo" href="/">慢记 <span>Slow Notes</span></a><p>保持好奇，慢慢生长。</p><span>© 2026 慢记 · 用心记录每一个日常</span><a href="#top">回到顶部 ↑</a></footer><div role="status" id="toast"></div>
+</body></html>

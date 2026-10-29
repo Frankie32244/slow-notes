@@ -1,0 +1,8 @@
+{% extends 'base.html' %}{% block title %}写博客 · 慢记{% endblock %}{% block content %}
+<main class="wrap editor-page" id="top"><div class="article-top"><a href="/#journal">← 返回文章</a><span>WRITE YOUR STORY</span></div><header class="editor-heading"><span class="eyebrow">每一个想法，都值得被记录</span><h1>写下你的<span>新一页。</span></h1><p>分享一段技术心得，或记录一个日常瞬间。</p></header>
+<form class="editor-form" method="post"><input type="hidden" name="csrf" value="{{ session.csrf }}">{% if errors %}<div class="form-errors" role="alert">{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}
+<label for="title">文章标题 <span>必填</span></label><input id="title" name="title" placeholder="给这段文字起一个名字…" required maxlength="120" value="{{ values.get('title','') }}">
+<label for="category">文章分类</label><select id="category" name="category">{% for category in categories %}<option {{ 'selected' if values.get('category', '技术手记') == category }}>{{ category }}</option>{% endfor %}</select>
+<label for="excerpt">一句话摘要 <span>选填，不填将从正文中提取</span></label><textarea id="excerpt" name="excerpt" rows="2" maxlength="300" placeholder="让读者知道，这篇文章想聊些什么。">{{ values.get('excerpt','') }}</textarea>
+<label for="body">文章正文 <span>纯文本，保留换行与缩进</span></label><textarea id="body" name="body" rows="18" required maxlength="100000" placeholder="从这里开始，慢慢写…">{{ values.get('body','') }}</textarea>
+<div class="editor-actions"><span>作者：李文豪 · 保存到本机数据库</span><button class="publish-button" type="submit">发布文章 ↗</button></div></form></main>{% endblock %}
