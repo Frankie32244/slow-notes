@@ -22,7 +22,7 @@
 - 十篇初始化文章，包含 Transformer、Python asyncio 和 SQLite 技术内容
 - 响应式布局、键盘焦点样式和 404 页面
 
-## 快速开始
+## QuickStart
 
 需要 Python 3.9 或以上版本。
 
