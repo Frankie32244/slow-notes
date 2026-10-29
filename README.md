@@ -6,23 +6,8 @@
 
 ## 项目预览
 
-### 首页
+<img width="1134" height="656" alt="image" src="https://github.com/user-attachments/assets/b2631f8a-0f0d-41ab-a030-15e9d1aec8cd" />
 
-精选封面、文章卡片、分类筛选与搜索，兼顾桌面和移动端布局。
-
-![慢记博客首页](docs/screenshots/home.jpg)
-
-### 文章阅读
-
-独立文章页包含作者、阅读时长、封面、正文、收藏和相关阅读。
-
-![Transformer 文章阅读页](docs/screenshots/article.jpg)
-
-### 在线写博客
-
-无需修改代码，填写标题、分类、摘要和正文即可发布。文章保存至本机 SQLite 数据库，发布后自动跳转至阅读页。
-
-![写博客页面](docs/screenshots/editor.jpg)
 
 ## 功能
 
