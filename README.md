@@ -6,9 +6,7 @@
 
 ## 项目预览
 
-<img width="1134" height="656" alt="image" src="https://github.com/user-attachments/assets/b2631f8a-0f0d-41ab-a030-15e9d1aec8cd" />
-
-<img width="1054" height="699" alt="0367" src="https://github.com/user-attachments/assets/b3f3f1a4-c796-48c5-9eed-d6ad08ffafb9" />
+![](./pics/0345.png)
 
 ## 功能
 
